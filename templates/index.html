@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Dynamic Language Translator</h1>
+        </header>
+
+        <main>
+            <form method="POST" class="translator-form">
+                <div class="form-group">
+                    <label for="from_language">Select Source Language:</label>
+                    <select name="from_language" id="from_language" class="dropdown">
+                        {% for language in languages %}
+                            <option value="{{ language }}">{{ language }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="to_language">Select Target Language:</label>
+                    <select name="to_language" id="to_language" class="dropdown">
+                        {% for language in languages %}
+                            <option value="{{ language }}">{{ language }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" name="start" class="btn start">Start Translation</button>
+                    <button type="submit" name="stop" class="btn stop">Stop Translation</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Created with ❤️ by Language Enthusiasts</p>
+        </footer>
+    </div>
+</body>
+</html>

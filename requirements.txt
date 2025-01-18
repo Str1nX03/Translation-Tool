@@ -1,0 +1,7 @@
+gtts
+pygame
+streamlit
+speechrecognition
+googletrans
+flask
+pyaudio

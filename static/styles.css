@@ -1,0 +1,89 @@
+/* General reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #dc2626);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f9fafb;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+label {
+    font-size: 1.2em;
+    color: #f1f5f9;
+}
+
+/* Dropdown styling */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styling */
+.btn {
+    width: 45%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Start button styling */
+.btn-start {
+    background-color: #1e40af;
+    color: #ffffff;
+}
+
+.btn-start:hover {
+    background-color: #1e3a8a;
+}
+
+/* Stop button styling */
+.btn-stop {
+    background-color: #b91c1c;
+    color: #ffffff;
+}
+
+.btn-stop:hover {
+    background-color: #dc2626;
+}
