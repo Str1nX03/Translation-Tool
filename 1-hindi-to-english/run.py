@@ -1,7 +1,7 @@
 from gtts import gTTS
 import speech_recognition as sr
 from googletrans import Translator
-import playsound
+from playsound3 import playsound
 import os
 
 translator = Translator()
@@ -12,7 +12,7 @@ def translator_fun(text):
 def text_to_voice(text_data):
     myobj = gTTS(text=text_data, lang='en', slow=False)
     myobj.save("cache_file.mp3")
-    playsound.playsound("cache_file.mp3")
+    playsound("cache_file.mp3")
     os.remove("cache_file.mp3")
 
 while True:
